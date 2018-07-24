@@ -148,7 +148,11 @@
     <Content Include="Views\Home\Dashboard.cshtml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Content Include="Views\Home\AddUser.cshtml" />
+=======
+    <Content Include="Views\Shared\_Layout.cshtml" />
+>>>>>>> 2cdf6eab8965e6192c145f509edfe2555b5cb6d1
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

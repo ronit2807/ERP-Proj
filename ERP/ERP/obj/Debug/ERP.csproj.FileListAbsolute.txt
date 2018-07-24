@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP\bin\ERP.dll
 C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP\bin\ERP.pdb
 C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP\bin\EntityFramework.dll
@@ -28,3 +29,25 @@ C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP\bin\System.Web.WebPages.Razor.x
 C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP\obj\Debug\ERP.dll
 C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP\obj\Debug\ERP.pdb
 C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP\obj\Debug\ERP.csprojResolveAssemblyReference.cache
+=======
+C:\Users\Riju\Documents\GitHub\ERP-Proj\ERP\ERP\bin\ERP.dll
+C:\Users\Riju\Documents\GitHub\ERP-Proj\ERP\ERP\bin\ERP.pdb
+C:\Users\Riju\Documents\GitHub\ERP-Proj\ERP\ERP\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Riju\Documents\GitHub\ERP-Proj\ERP\ERP\bin\Newtonsoft.Json.dll
+C:\Users\Riju\Documents\GitHub\ERP-Proj\ERP\ERP\bin\System.Web.Helpers.dll
+C:\Users\Riju\Documents\GitHub\ERP-Proj\ERP\ERP\bin\System.Web.Mvc.dll
+C:\Users\Riju\Documents\GitHub\ERP-Proj\ERP\ERP\bin\System.Web.Razor.dll
+C:\Users\Riju\Documents\GitHub\ERP-Proj\ERP\ERP\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Riju\Documents\GitHub\ERP-Proj\ERP\ERP\bin\System.Web.WebPages.dll
+C:\Users\Riju\Documents\GitHub\ERP-Proj\ERP\ERP\bin\System.Web.WebPages.Razor.dll
+C:\Users\Riju\Documents\GitHub\ERP-Proj\ERP\ERP\bin\Newtonsoft.Json.xml
+C:\Users\Riju\Documents\GitHub\ERP-Proj\ERP\ERP\bin\System.Web.Helpers.xml
+C:\Users\Riju\Documents\GitHub\ERP-Proj\ERP\ERP\bin\System.Web.Mvc.xml
+C:\Users\Riju\Documents\GitHub\ERP-Proj\ERP\ERP\bin\System.Web.Razor.xml
+C:\Users\Riju\Documents\GitHub\ERP-Proj\ERP\ERP\bin\System.Web.WebPages.xml
+C:\Users\Riju\Documents\GitHub\ERP-Proj\ERP\ERP\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Riju\Documents\GitHub\ERP-Proj\ERP\ERP\bin\System.Web.WebPages.Razor.xml
+C:\Users\Riju\Documents\GitHub\ERP-Proj\ERP\ERP\obj\Debug\ERP.csprojResolveAssemblyReference.cache
+C:\Users\Riju\Documents\GitHub\ERP-Proj\ERP\ERP\obj\Debug\ERP.dll
+C:\Users\Riju\Documents\GitHub\ERP-Proj\ERP\ERP\obj\Debug\ERP.pdb
+>>>>>>> 2cdf6eab8965e6192c145f509edfe2555b5cb6d1
