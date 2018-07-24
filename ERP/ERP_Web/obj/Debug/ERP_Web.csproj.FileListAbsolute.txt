@@ -24,3 +24,23 @@ C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.Raz
 C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.csprojResolveAssemblyReference.cache
 C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.dll
 C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.pdb
+D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\ERP_Web.dll
+D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\ERP_Web.pdb
+D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\Newtonsoft.Json.dll
+D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\System.Web.Helpers.dll
+D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\System.Web.Mvc.dll
+D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\System.Web.Razor.dll
+D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.dll
+D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.Razor.dll
+D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\Newtonsoft.Json.xml
+D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\System.Web.Helpers.xml
+D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\System.Web.Mvc.xml
+D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\System.Web.Razor.xml
+D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.xml
+D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.Razor.xml
+D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.csprojResolveAssemblyReference.cache
+D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.dll
+D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.pdb
