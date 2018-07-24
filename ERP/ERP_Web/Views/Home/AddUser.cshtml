@@ -10,49 +10,47 @@
 @using (Html.BeginForm())
 {
     @Html.ValidationSummary(true)
-
-    <fieldset>
-        <legend>Add User</legend>
-
-        <div class="editor-label">
+      
+    
+    <div class="form-group">
+        <div class="col-md-4">
             @Html.LabelFor(model => model.userName)
-        </div>
-        <div class="editor-field">
             @Html.EditorFor(model => model.userName)
             @Html.ValidationMessageFor(model => model.userName)
         </div>
 
-        <div class="editor-label">
+
+
+
+        <div class="col-md-4">
             @Html.LabelFor(model => model.loginId)
-        </div>
-        <div class="editor-field">
             @Html.EditorFor(model => model.loginId)
             @Html.ValidationMessageFor(model => model.loginId)
         </div>
 
-        <div class="editor-label">
+        <div class="col-md-4">
             @Html.LabelFor(model => model.userPass)
-        </div>
-        <div class="editor-field">
             @Html.EditorFor(model => model.userPass)
             @Html.ValidationMessageFor(model => model.userPass)
         </div>
-        <div class="editor-label">
+        <div class="row">
+        <div class="col-md-4">
             @Html.LabelFor(model => model.isActive)
-        </div>
-        <div class="editor-field">
             @Html.EditorFor(model => model.isActive)
             @Html.ValidationMessageFor(model => model.isActive)
         </div>
-        <div class="editor-field">
-            @*            @Html.DropDownList("Groups", Model.Groups, "--Select--",Model.groupId) *@
-            @Html.DropDownListFor(m=>m.groupId , Model.Groups, "--Select Group--")
-        </div>
 
-        <p>
+        <div class="col-md-4">
+            @*            @Html.DropDownList("Groups", Model.Groups, "--Select--",Model.groupId) *@
+            <label>Profile: </label>
+            @Html.DropDownListFor(m => m.groupId, Model.Groups, "--Select Group--")
+        </div>
+            </div>
+       
+        <div class="col-md-4">
             <input type="submit" value="Create" />
-        </p>
-    </fieldset>
+        </div>
+    </div>
 }
 
 <div>
