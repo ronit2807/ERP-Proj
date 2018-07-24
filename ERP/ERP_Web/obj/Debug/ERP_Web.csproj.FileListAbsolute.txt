@@ -21,9 +21,9 @@ C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\System.Web.Razor.xml
 C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.xml
 C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.Deployment.xml
 C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.Razor.xml
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.csprojResolveAssemblyReference.cache
 C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.dll
 C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.pdb
+<<<<<<< HEAD
 D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\ERP_Web.dll
 D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\ERP_Web.pdb
 D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\Microsoft.Web.Infrastructure.dll
@@ -44,3 +44,9 @@ D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.R
 D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.csprojResolveAssemblyReference.cache
 D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.dll
 D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.pdb
+=======
+C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\EntityFramework.dll
+C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\EntityFramework.SqlServer.dll
+C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\EntityFramework.xml
+C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\EntityFramework.SqlServer.xml
+>>>>>>> 7d1611b04396725fef4bd85a3b597694c50d2d01
