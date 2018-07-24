@@ -1,31 +1,7 @@
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\ERP_Web.dll
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\ERP_Web.pdb
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\Newtonsoft.Json.dll
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\System.Net.Http.Formatting.dll
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\System.Web.Helpers.dll
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\System.Web.Http.dll
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\System.Web.Http.WebHost.dll
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\System.Web.Mvc.dll
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\System.Web.Razor.dll
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.Deployment.dll
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.dll
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.Razor.dll
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\Newtonsoft.Json.xml
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\System.Net.Http.Formatting.xml
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\System.Web.Helpers.xml
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\System.Web.Http.xml
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\System.Web.Http.WebHost.xml
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\System.Web.Mvc.xml
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\System.Web.Razor.xml
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.xml
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.Deployment.xml
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.Razor.xml
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.dll
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.pdb
-<<<<<<< HEAD
 D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\ERP_Web.dll
 D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\ERP_Web.pdb
+D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\EntityFramework.dll
+D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\EntityFramework.SqlServer.dll
 D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\Microsoft.Web.Infrastructure.dll
 D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\Newtonsoft.Json.dll
 D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\System.Web.Helpers.dll
@@ -34,6 +10,8 @@ D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\System.Web.Razor.dll
 D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.Deployment.dll
 D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.dll
 D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.Razor.dll
+D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\EntityFramework.xml
+D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\EntityFramework.SqlServer.xml
 D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\Newtonsoft.Json.xml
 D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\System.Web.Helpers.xml
 D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\System.Web.Mvc.xml
@@ -44,9 +22,3 @@ D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.R
 D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.csprojResolveAssemblyReference.cache
 D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.dll
 D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.pdb
-=======
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\EntityFramework.dll
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\EntityFramework.SqlServer.dll
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\EntityFramework.xml
-C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\EntityFramework.SqlServer.xml
->>>>>>> 7d1611b04396725fef4bd85a3b597694c50d2d01
