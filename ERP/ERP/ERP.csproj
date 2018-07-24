@@ -138,9 +138,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <ItemGroup>
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
+=======
+>>>>>>> parent of 8c78ad2... Add user page added
 =======
 >>>>>>> parent of 8c78ad2... Add user page added
 =======
