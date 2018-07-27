@@ -1,0 +1,11 @@
+﻿create table master_menu
+(
+menuUid varchar(50) primary key,
+menuName varchar(50),
+parentName varchar(50),
+controlerName varchar(50),
+actionName varchar(50)
+)
+insert into master_menu values('mastr','Master','','','')
+insert into master_menu values('usr','User','mastr','home','AddUser')
+

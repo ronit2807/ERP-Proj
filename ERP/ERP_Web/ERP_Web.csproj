@@ -120,6 +120,7 @@
     <Compile Include="Models\DataTemplates\MasterVM\UsersListVM.cs" />
     <Compile Include="Models\DataTemplates\MasterVM\UserVM.cs" />
     <Compile Include="Models\DataTemplates\Master\group.cs" />
+    <Compile Include="Models\DataTemplates\Master\master_menu.cs" />
     <Compile Include="Models\DataTemplates\Master\user.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -156,6 +157,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\UsersList.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\MenuView.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

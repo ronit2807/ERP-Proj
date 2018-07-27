@@ -1,0 +1,42 @@
+﻿@model List<ERP_Web.Models.DataTemplates.Master.master_menu>
+<script>
+    function MenuClick(id, ctrl, act) {
+        if (ctrl) {
+            window.location.href = '/'+ctrl + '/' + act;
+        } else {
+            document.getElementById(id).style.width = "250px";
+        }
+    }
+
+    function closelbl1(id) {
+        document.getElementById(id).style.width = "0px";
+    }
+</script>
+
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    @{
+        var parent = (from d in Model
+                      where d.parentName == ""
+                      select d).ToList();
+                    
+    }
+
+    @foreach (var itm in parent)
+    {  
+        <a href="#" onclick="MenuClick('@itm.menuUid','@itm.controlerName','@itm.actionName')">@itm.menuName</a>
+        <div id=@itm.menuUid class="sidenav">
+             <a href="javascript:void(0)" class="closebtn" onclick="closelbl1('@itm.menuUid')">&times;</a>
+            @{ var label1 = (from d in Model
+                             where d.parentName == itm.menuUid
+                             select d).ToList();
+                }
+             @foreach (var itm1 in label1)
+             { 
+              <a href="#" onclick="MenuClick('@itm1.menuUid','@itm1.controlerName','@itm1.actionName')">@itm1.menuName</a>
+             }
+        </div>
+    }
+</div>
