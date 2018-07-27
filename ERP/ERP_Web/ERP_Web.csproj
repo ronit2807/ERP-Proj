@@ -117,6 +117,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Context\MasterDbContext.cs" />
+    <Compile Include="Models\DataTemplates\MasterVM\UsersListVM.cs" />
     <Compile Include="Models\DataTemplates\MasterVM\UserVM.cs" />
     <Compile Include="Models\DataTemplates\Master\group.cs" />
     <Compile Include="Models\DataTemplates\Master\user.cs" />
@@ -143,15 +144,18 @@
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
-  <ItemGroup> 
+  <ItemGroup>
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\Index.cshtml" /> 
+    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\AddUser.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\Dashboard.cshtml" /> 
+    <Content Include="Views\Home\Dashboard.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\UsersList.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

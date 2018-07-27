@@ -5,6 +5,12 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<style>
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+</style>
 <h2>Create New User</h2>
 
 @using (Html.BeginForm())
@@ -13,47 +19,75 @@
       
     
     <div class="form-group">
-        <div class="col-md-4">
-            @Html.LabelFor(model => model.userName)
-            @Html.EditorFor(model => model.userName)
-            @Html.ValidationMessageFor(model => model.userName)
-        </div>
-
-
-
-
-        <div class="col-md-4">
-            @Html.LabelFor(model => model.loginId)
-            @Html.EditorFor(model => model.loginId)
-            @Html.ValidationMessageFor(model => model.loginId)
-        </div>
-
-        <div class="col-md-4">
-            @Html.LabelFor(model => model.userPass)
-            @Html.EditorFor(model => model.userPass)
-            @Html.ValidationMessageFor(model => model.userPass)
-        </div>
         <div class="row">
-        <div class="col-md-4">
-            @Html.LabelFor(model => model.isActive)
-            @Html.EditorFor(model => model.isActive)
-            @Html.ValidationMessageFor(model => model.isActive)
-        </div>
+            <div class="col-md-1">
+                @Html.LabelFor(model => model.userName)
 
-        <div class="col-md-4">
-            @*            @Html.DropDownList("Groups", Model.Groups, "--Select--",Model.groupId) *@
-            <label>Profile: </label>
-            @Html.DropDownListFor(m => m.groupId, Model.Groups, "--Select Group--")
-        </div>
             </div>
-       
-        <div class="col-md-4">
-            <input type="submit" value="Create" />
+
+            <div class="col-md-3">
+
+                @Html.EditorFor(model => model.userName)
+                @Html.ValidationMessageFor(model => model.userName)
+            </div>
+
+
+
+            <div class="col-md-1">
+                @Html.LabelFor(model => model.loginId)
+
+            </div>
+
+            <div class="col-md-3">
+
+                @Html.EditorFor(model => model.loginId)
+                @Html.ValidationMessageFor(model => model.loginId)
+            </div>
+
+            <div class="col-md-1">
+                @Html.LabelFor(model => model.userPass)
+
+            </div>
+
+            <div class="col-md-3">
+
+                @Html.PasswordFor(model => model.userPass)
+                @Html.ValidationMessageFor(model => model.userPass)
+            </div>
+        </div>
+        &nbsp;
+        <div class="row">
+            <div class="col-md-1">
+                @Html.LabelFor(model => model.isActive)
+
+            </div>
+
+            <div class="col-md-3">
+
+                @Html.EditorFor(model => model.isActive)
+                @Html.ValidationMessageFor(model => model.isActive)
+            </div>
+            <div class="col-md-1">
+
+                <label>Profile: </label>
+
+            </div>
+            <div class="col-md-3">
+
+                @Html.DropDownListFor(m => m.groupId, Model.Groups, "--Select Group--")
+            </div>
+        </div>
+        &nbsp;
+
+        <div class="col-md-12 text-center">
+            <input class="btn btn-sm btn-primary" type="submit" value="Create" />
         </div>
     </div>
 }
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
+<div class="col-md-6">
+    <div class="btn btn-sm btn-danger">
+        @Html.ActionLink("Back to List", "Index")
+    </div>
 </div>
 

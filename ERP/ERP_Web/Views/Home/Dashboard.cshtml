@@ -5,5 +5,10 @@
 
 
 <h2>Dashboard</h2>
-
+@if (TempData["SM"] != null)
+{
+    <div class="alert-success">
+        <p>@TempData["SM"]</p>
+    </div>
+}
 

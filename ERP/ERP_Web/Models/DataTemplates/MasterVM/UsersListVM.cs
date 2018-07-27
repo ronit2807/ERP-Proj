@@ -4,38 +4,36 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
-//using System.Web.WebPages.Html;
-using System.Web.Mvc;
 
-namespace ERP.Models.DataTemplates.MasterVM
+namespace ERP_Web.Models.DataTemplates.MasterVM
 {
-    public class UserVM
+    public class UsersListVM
     {
         public Int64 id { get; set; }
-        [Display(Name="User Name")]
+        [Display(Name = "User Name")]
         public string userName { get; set; }
         [Display(Name = "Login Id")]
         public string loginId { get; set; }
         [Display(Name = "Password")]
         public string userPass { get; set; }
-        public Int64 groupId { get; set; }
+        [Display(Name = "Group")]
+        public string group { get; set; }
         [Display(Name = "Is Active")]
         public bool isActive { get; set; }
-        public IEnumerable<SelectListItem> Groups { get; set; }
 
-        public UserVM()
+        public UsersListVM()
         {
-            
+
         }
 
-        public UserVM(user model)
+        public UsersListVM(user model,string groupname)
         {
             this.id = model.id;
             this.userName = model.userName;
             this.loginId = model.loginId;
             this.userPass = model.userPass;
-            this.groupId = model.groupId;
             this.isActive = model.isActive;
+            this.group = groupname;
         }
     }
 }

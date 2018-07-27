@@ -11,12 +11,11 @@ namespace ERP.Models.DataTemplates.Master
     public class user
     {
         [Key]
-        public int id { get; set; }
-        
+        public Int64 id { get; set; }
         public string userName { get; set; }
         public string loginId { get; set; }
         public string userPass { get; set; }
-        public int groupId { get; set; }
+        public Int64 groupId { get; set; }
         public bool isActive { get; set; }
 
     }

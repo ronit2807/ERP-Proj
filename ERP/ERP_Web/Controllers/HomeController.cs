@@ -6,6 +6,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Security.Cryptography;
+using System.Text;
+using ERP_Web.Models.DataTemplates.MasterVM;
 
 namespace ERP.Controllers
 {
@@ -48,7 +51,8 @@ namespace ERP.Controllers
             l_oUser.id = model.id;
             l_oUser.isActive = model.isActive;
             l_oUser.userName = model.userName;
-            l_oUser.userPass = model.userPass;
+            l_oUser.userPass = ComputeSHA(model.userPass);
+            l_oUser.loginId = model.loginId;
 
             db.users.Add(l_oUser);
             db.SaveChanges();
@@ -56,6 +60,29 @@ namespace ERP.Controllers
 
             return Redirect("Dashboard");
             //return View();
+        }
+
+        public ActionResult UsersList()
+        {
+            List<UsersListVM> l_ousersList = new List<UsersListVM>();
+            UsersListVM l_oUserListVM;
+            
+            using (MasterDbContext db = new MasterDbContext())
+            {
+                foreach (var User in db.users.ToList())
+                {
+                    
+                    
+                    group l_oGroup = new group();
+                    l_oGroup = db.groups.Where(b => b.id == User.groupId).FirstOrDefault();
+
+                    l_oUserListVM = new UsersListVM(User, l_oGroup.groupName);
+
+                    l_ousersList.Add(l_oUserListVM);
+                }
+            }
+
+            return View(l_ousersList);
         }
 
         private IEnumerable<SelectListItem> GetSelectListItems(IEnumerable<group> elements)
@@ -70,6 +97,21 @@ namespace ERP.Controllers
                 });
             }
             return selectList;
+        }
+
+        static string ComputeSHA(string rawdata)
+        {
+            using (SHA256 sha256hash = SHA256.Create())
+            {
+                byte[] bytes = sha256hash.ComputeHash(Encoding.UTF8.GetBytes(rawdata));
+                StringBuilder stringbuilder = new StringBuilder();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    stringbuilder.Append(bytes[i].ToString("x2"));
+                }
+
+                return stringbuilder.ToString();
+            }
         }
 
     }
