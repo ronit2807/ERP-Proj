@@ -19,7 +19,6 @@ D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\System.Web.Razor.xml
 D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.xml
 D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.Deployment.xml
 D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.Razor.xml
-D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.csprojResolveAssemblyReference.cache
 D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.dll
 D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.pdb
 C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\ERP_Web.dll

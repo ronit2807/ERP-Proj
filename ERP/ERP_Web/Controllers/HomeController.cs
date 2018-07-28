@@ -9,6 +9,7 @@ using System.Web.Mvc;
 using System.Security.Cryptography;
 using System.Text;
 using ERP_Web.Models.DataTemplates.MasterVM;
+using ERP_Web.Models.DataTemplates.Master;
 
 namespace ERP.Controllers
 {
@@ -35,6 +36,7 @@ namespace ERP.Controllers
 
                 return View(model);
             }
+
         }
 
         [HttpPost]
@@ -144,5 +146,15 @@ namespace ERP.Controllers
             }
         }
 
+        public ActionResult MenuView() 
+        {
+            List<master_menu> master_menu = new List<master_menu>();
+            using (MasterDbContext db = new MasterDbContext())
+            {
+                master_menu = db.master_menu.ToList();  
+            }
+
+            return PartialView("MenuView", master_menu);
+        }
     }
 }

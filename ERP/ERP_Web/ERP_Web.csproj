@@ -122,6 +122,7 @@
     <Compile Include="Models\DataTemplates\MasterVM\UsersListVM.cs" />
     <Compile Include="Models\DataTemplates\MasterVM\UserVM.cs" />
     <Compile Include="Models\DataTemplates\Master\group.cs" />
+    <Compile Include="Models\DataTemplates\Master\master_menu.cs" />
     <Compile Include="Models\DataTemplates\Master\user.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -161,10 +162,14 @@
     <Content Include="Views\Home\UsersList.cshtml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Content Include="Views\Home\AddGroup.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\GroupList.cshtml" />
+=======
+    <Content Include="Views\Shared\MenuView.cshtml" />
+>>>>>>> b6c433cc1cbd5987b733e9834b260da21ebdf91c
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
