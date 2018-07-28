@@ -5,12 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<style>
-    a {
-        color: #ffffff;
-        text-decoration: none;
-    }
-</style>
+
 <h2>Create New User</h2>
 
 @using (Html.BeginForm())
@@ -79,15 +74,16 @@
         </div>
         &nbsp;
 
-        <div class="col-md-12 text-center">
-            <input class="btn btn-sm btn-primary" type="submit" value="Create" />
-        </div>
     </div>
 }
 
 <div class="col-md-6">
-    <div class="btn btn-sm btn-danger">
-        @Html.ActionLink("Back to List", "Index")
+    <div>
+        <input class="btn btn-sm btn-primary" type="submit" value="Create" />
+        <div class="btn btn-sm btn-danger">
+            @Html.ActionLink("Back to List", "UsersList")
+        </div>
     </div>
+
 </div>
 

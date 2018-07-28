@@ -62,6 +62,12 @@ namespace ERP.Controllers
             //return View();
         }
 
+        [HttpGet]
+        public ActionResult EditUser()
+        {
+            return View();
+        }
+
         public ActionResult UsersList()
         {
             List<UsersListVM> l_ousersList = new List<UsersListVM>();
@@ -83,6 +89,30 @@ namespace ERP.Controllers
             }
 
             return View(l_ousersList);
+        }
+
+        public ActionResult AddGroup()
+        {
+            return View();
+        }
+
+        public ActionResult GroupList()
+        {
+            List<GroupListVM> groupList = new List<GroupListVM>();
+            GroupListVM l_oGroup;
+            using (MasterDbContext db = new MasterDbContext())
+            {
+                foreach (var obj in db.groups)
+                {
+                    l_oGroup = new GroupListVM();
+                    l_oGroup.id = obj.id;
+                    l_oGroup.groupName = obj.groupName;
+
+                    groupList.Add(l_oGroup);
+                }
+
+            }
+            return View(groupList);
         }
 
         private IEnumerable<SelectListItem> GetSelectListItems(IEnumerable<group> elements)
