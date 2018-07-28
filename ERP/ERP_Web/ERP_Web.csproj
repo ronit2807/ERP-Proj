@@ -162,14 +162,14 @@
     <Content Include="Views\Home\UsersList.cshtml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Content Include="Views\Home\AddGroup.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\GroupList.cshtml" />
-=======
     <Content Include="Views\Shared\MenuView.cshtml" />
->>>>>>> b6c433cc1cbd5987b733e9834b260da21ebdf91c
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\EditUser.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

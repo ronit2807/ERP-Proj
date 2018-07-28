@@ -65,9 +65,22 @@ namespace ERP.Controllers
         }
 
         [HttpGet]
-        public ActionResult EditUser()
+        public ActionResult EditUser(int id)
         {
-            return View();
+            UserVM model;
+            using (MasterDbContext db = new MasterDbContext())
+            {
+                user obj = db.users.Find(id);
+                if (obj == null)
+                {
+                    return Content("This user does not exist");
+                }
+
+                model = new UserVM(obj);
+                var dbData = db.groups.ToList();
+                model.Groups = GetSelectListItems(dbData);
+            }
+            return View(model);
         }
 
         public ActionResult UsersList()
