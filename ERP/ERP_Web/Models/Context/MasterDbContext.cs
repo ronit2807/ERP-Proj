@@ -12,7 +12,11 @@ namespace ERP.Models.Context
     {
         public MasterDbContext()
         {
-            this.Database.Connection.ConnectionString = @"Data Source=(LocalDB)\v11.0;initial catalog=ERP;Integrated Security=True;Connect Timeout=30";
+            if (Environment.UserName == "Riju")
+                this.Database.Connection.ConnectionString = @"Data Source=RIJU-PC;initial catalog=ERP;Integrated Security=True;Connect Timeout=30";
+            else {
+                this.Database.Connection.ConnectionString = @"Data Source=(LocalDB)\v11.0;initial catalog=ERP;Integrated Security=True;Connect Timeout=30";
+            }
         }
 
         public DbSet<user> users { get; set; }

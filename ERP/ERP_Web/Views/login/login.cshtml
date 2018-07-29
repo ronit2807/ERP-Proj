@@ -1,0 +1,92 @@
+﻿@model ERP_Web.Models.DataTemplates.MasterVM.LoginVM
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <a href="~/Scripts/CSS/bootstrap.min.css.map"> </a>
+    <link href="~/Scripts/CSS/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Scripts/CSS/animate.css" rel="stylesheet" />
+    <link href="~/Scripts/CSS/hamburgers.min.css" rel="stylesheet" />
+    <link href="~/Scripts/CSS/select2.min.css" rel="stylesheet" />
+    <link href="~/Scripts/CSS/main.css" rel="stylesheet" />
+    <link href="~/Scripts/CSS/util.css" rel="stylesheet" />
+    <title>login</title>
+</head>
+<body>
+
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <div class="login100-pic js-tilt" data-tilt>
+                    <img src="images/img-01.png" alt="IMG">
+                </div>
+
+                <form class="login100-form validate-form">
+                    <span class="login100-form-title">ERP Login
+                    </span>
+                      
+                        <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                           @Html.TextBoxFor(Model => Model.UserName, new { @class="input100" , @placeholder="Email"}) 
+                             
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </span>
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate="Password is required">
+                            @Html.TextBoxFor(Model => Model.Password, new { @class="input100" , @placeholder="Password"}) 
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                                <i class="fa fa-lock" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    
+                        <div class="container-login100-form-btn">
+                            <input class="login100-form-btn" type="button" value="Login" onclick="tryLogin()"/>
+                                 
+                        </div>
+                   
+
+                        <div class="text-center p-t-12">
+                            <span class="txt1">Forgot
+                            </span>
+                            <a class="txt2" href="#">Username / Password?
+                            </a>
+                        </div>
+                   
+                    <div class="text-center p-t-136">
+                        @*  <a class="txt2" href="#">Create your Account
+							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+                            </a>*@
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/Scripts/JS/jquery-3.2.1.min.js"></script>
+    <script src="~/Scripts/JS/popper.js"></script>
+    <script src="~/Scripts/JS/bootstrap.min.js"></script>
+    <script src="~/Scripts/JS/select2.min.js"></script>
+    <script src="~/Scripts/JS/tilt.jquery.min.js"></script>
+    <script>
+        function tryLogin() {
+            var loginvm = {};
+            loginvm.UserName = $('#UserName').val();
+            loginvm.Password = $('#Password').val();
+
+            $.post("login/Validate", loginvm, function (result) {
+                console.log(result);
+            });
+             
+        }
+    </script>
+</body>
+</html>

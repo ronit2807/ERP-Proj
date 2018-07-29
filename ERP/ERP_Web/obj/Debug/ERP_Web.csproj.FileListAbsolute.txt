@@ -51,3 +51,4 @@ C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.Raz
 C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.dll
 C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.pdb
 C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.csprojResolveAssemblyReference.cache
+D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.csprojResolveAssemblyReference.cache
