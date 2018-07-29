@@ -113,12 +113,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\loginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Context\MasterDbContext.cs" />
     <Compile Include="Models\DataTemplates\MasterVM\AddGroupVM.cs" />
     <Compile Include="Models\DataTemplates\MasterVM\GroupListVM.cs" />
+    <Compile Include="Models\DataTemplates\MasterVM\LoginVM.cs" />
     <Compile Include="Models\DataTemplates\MasterVM\UsersListVM.cs" />
     <Compile Include="Models\DataTemplates\MasterVM\UserVM.cs" />
     <Compile Include="Models\DataTemplates\Master\group.cs" />
@@ -131,7 +133,19 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Global.asax" />
+    <Content Include="images\img-01.png" />
+    <Content Include="Scripts\CSS\animate.css" />
+    <Content Include="Scripts\CSS\font-awesome.min.css" />
+    <Content Include="Scripts\CSS\hamburgers.min.css" />
+    <Content Include="Scripts\CSS\main.css" />
+    <Content Include="Scripts\CSS\select2.min.css" />
     <Content Include="Scripts\CSS\style.css" />
+    <Content Include="Scripts\CSS\util.css" />
+    <Content Include="Scripts\JS\bootstrap.min.js" />
+    <Content Include="Scripts\JS\jquery-3.2.1.min.js" />
+    <Content Include="Scripts\JS\popper.js" />
+    <Content Include="Scripts\JS\select2.min.js" />
+    <Content Include="Scripts\JS\tilt.jquery.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -170,6 +184,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\EditUser.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\login\login.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\CSS\bootstrap.min.css.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
