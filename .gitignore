@@ -39,3 +39,6 @@ ERP/ERP_Web/obj/Debug/ERP_Web.csprojResolveAssemblyReference.cache
 *.pdb
 >>>>>>> b73b118e8aa02799747bf65944c2c90d3642d2c8
 *.txt
+*.cache
+*.dll
+*.pdb

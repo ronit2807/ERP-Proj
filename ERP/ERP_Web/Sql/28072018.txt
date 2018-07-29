@@ -1,4 +1,22 @@
-﻿create table master_menu
+﻿-- 29/07/2018
+create table t_master_customer(
+cust_id BIGINT identity(1,1) PRIMARY KEY,
+cust_uid_type integer REFERENCES t_master_uid_type(uid_type),
+cust_uid varchar(50),
+cust_name varchar(100),
+cust_dob DATETIME,
+remarks	varchar(500)
+);
+
+create table t_master_uid_type(
+uid_type integer IDENTITY(1,1) PRIMARY KEY,
+uid_name VARCHAR(50)
+);
+
+
+
+-- 28/07/2018
+create table master_menu
 (
 menuUid varchar(50) primary key,
 menuName varchar(50),
@@ -8,4 +26,6 @@ actionName varchar(50)
 )
 insert into master_menu values('mastr','Master','','','')
 insert into master_menu values('usr','User','mastr','home','AddUser')
+
+-- 29/07/2018
 

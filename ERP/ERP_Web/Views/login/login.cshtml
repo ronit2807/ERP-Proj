@@ -41,7 +41,7 @@
                         </div>
 
                         <div class="wrap-input100 validate-input" data-validate="Password is required">
-                            @Html.TextBoxFor(Model => Model.Password, new { @class="input100" , @placeholder="Password"}) 
+                            @Html.PasswordFor(Model => Model.Password, new { @class="input100" , @placeholder="Password"}) 
                             <span class="focus-input100"></span>
                             <span class="symbol-input100">
                                 <i class="fa fa-lock" aria-hidden="true"></i>
@@ -83,7 +83,9 @@
             loginvm.Password = $('#Password').val();
 
             $.post("login/Validate", loginvm, function (result) {
-                console.log(result);
+                if (result == 'True') {
+                    window.location.href = '/Home/Dashboard';
+                }
             });
              
         }
