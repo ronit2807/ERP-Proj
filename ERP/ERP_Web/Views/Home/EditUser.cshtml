@@ -1,63 +1,89 @@
 ﻿@model ERP.Models.DataTemplates.MasterVM.UserVM
 
 @{
-    ViewBag.Title = "EditUser";
+    ViewBag.Title = "Edit User";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>EditUser</h2>
 
-@using (Html.BeginForm()) {
+<h2>Edit User</h2>
+
+@using (Html.BeginForm())
+{
     @Html.ValidationSummary(true)
+      
+    
+    <div class="form-group">
+        <div class="row">
+            <div class="col-md-1">
+                @Html.LabelFor(model => model.userName)
 
-    <fieldset>
-        <legend>UserVM</legend>
-
-        @Html.HiddenFor(model => model.id)
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.userName)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.userName)
-            @Html.ValidationMessageFor(model => model.userName)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.loginId)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.loginId)
-            @Html.ValidationMessageFor(model => model.loginId)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.userPass)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.userPass)
-            @Html.ValidationMessageFor(model => model.userPass)
-        </div>
-
-         <div class="col-md-3">
-
-                @Html.DropDownListFor(m => m.groupId, Model.Groups, "--Select Group--")
             </div>
 
-        <div class="editor-label">
-            @Html.LabelFor(model => model.isActive)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.isActive)
-            @Html.ValidationMessageFor(model => model.isActive)
-        </div>
+            <div class="col-md-3">
 
-        <p>
-            <input type="submit" value="Save" />
-        </p>
-    </fieldset>
+                @Html.EditorFor(model => model.userName)
+                @Html.ValidationMessageFor(model => model.userName)
+            </div>
+
+
+
+            <div class="col-md-1">
+                @Html.LabelFor(model => model.loginId)
+
+            </div>
+
+            <div class="col-md-3">
+
+                @Html.EditorFor(model => model.loginId)
+                @Html.ValidationMessageFor(model => model.loginId)
+            </div>
+
+            <div class="col-md-1">
+                @Html.LabelFor(model => model.userPass)
+
+            </div>
+
+            <div class="col-md-3">
+
+                @Html.PasswordFor(model => model.userPass)
+                @Html.ValidationMessageFor(model => model.userPass)
+            </div>
+        </div>
+        &nbsp;
+        <div class="row">
+            <div class="col-md-1">
+                @Html.LabelFor(model => model.isActive)
+
+            </div>
+
+            <div class="col-md-3">
+
+                @Html.EditorFor(model => model.isActive)
+                @Html.ValidationMessageFor(model => model.isActive)
+            </div>
+            <div class="col-md-1">
+
+                <label>Profile: </label>
+
+            </div>
+            <div class="col-md-3">
+
+                @Html.DropDownListFor(m=>m.groupId,Model.Groups)
+            </div>
+        </div>
+        &nbsp;
+        <div class="col-md-6">
+            <div>
+                <input class="btn btn-sm btn-primary" type="submit" value="Save" />
+                <div class="btn btn-sm btn-danger">
+                    @Html.ActionLink("Back to List", "UsersList")
+                </div>
+            </div>
+
+        </div>
+    </div>
 }
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
+
+

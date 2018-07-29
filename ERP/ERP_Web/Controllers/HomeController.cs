@@ -60,7 +60,7 @@ namespace ERP.Controllers
             db.SaveChanges();
             TempData["SM"] = "User successfully added!";
 
-            return Redirect("Dashboard");
+            return Redirect("UsersList");
             //return View();
         }
 
@@ -83,6 +83,31 @@ namespace ERP.Controllers
             return View(model);
         }
 
+        [HttpPost]
+        public ActionResult EditUser(UserVM model)
+        {
+            
+            using (MasterDbContext db = new MasterDbContext())
+            {
+                Int64 id = model.id;
+                user obj = db.users.Find(id);
+                if (obj == null)
+                {
+                    return Content("This user does not exist");
+                }
+
+                obj.id = model.id;
+                obj.isActive = model.isActive;
+                obj.loginId = model.loginId;
+                obj.userName = model.userName;
+                obj.userPass = model.userPass;
+                obj.groupId = model.groupId;
+                db.SaveChanges();
+                
+            }
+            return RedirectToAction("UsersList");
+        }
+
         public ActionResult UsersList()
         {
             List<UsersListVM> l_ousersList = new List<UsersListVM>();
@@ -101,9 +126,10 @@ namespace ERP.Controllers
 
                     l_ousersList.Add(l_oUserListVM);
                 }
+                return View(l_ousersList);
             }
 
-            return View(l_ousersList);
+            
         }
 
         public ActionResult AddGroup()
