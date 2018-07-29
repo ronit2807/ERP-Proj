@@ -50,3 +50,8 @@ C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.Dep
 C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\bin\System.Web.WebPages.Razor.xml
 C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.dll
 C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.pdb
+<<<<<<< HEAD
+=======
+C:\Users\RONIT\Documents\GitHub\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.csprojResolveAssemblyReference.cache
+D:\Projects\complete projects\Git\ERP-Proj\ERP\ERP_Web\obj\Debug\ERP_Web.csprojResolveAssemblyReference.cache
+>>>>>>> b73b118e8aa02799747bf65944c2c90d3642d2c8
