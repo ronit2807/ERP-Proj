@@ -2,7 +2,9 @@
         color: #000000;
         text-decoration: none;
     }
-
-field-validation-error {
+.mandatory {
+font-size: 17px;
+    font-weight: 600;
     color: red;
+
 }

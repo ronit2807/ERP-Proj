@@ -43,7 +43,8 @@
                 custVM.thirdField = $('#ex3').val();
                 
                 if (custVM.cust_uid_type == 0|| custVM.cust_name=="") {
-                    $('#dropdown-error').text("*");
+                    //$('#dropdown-error').text("*");
+                    $('#dropdown-error').show();
                     
                 }
 
@@ -76,6 +77,7 @@
             </div>
             <div class="col-md-3">
                 @Html.DropDownListFor(m => m.cust_uid_type, Model.uidTypes, "--Select Type--",new { @id="cust_uid_type"})
+                <span id="dropdown-error" class="mandatory" style="display:none"><i class="fa fa-exclamation-circle"></i></span>
             </div>
             <div class="col-md-1">
                 @Html.LabelFor(model => model.cust_uid)
