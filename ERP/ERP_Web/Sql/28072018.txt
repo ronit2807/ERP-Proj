@@ -13,6 +13,12 @@ uid_type integer IDENTITY(1,1) PRIMARY KEY,
 uid_name VARCHAR(50)
 );
 
+INSERT INTO t_master_uid_type VALUES ('Contact Number');
+INSERT INTO t_master_uid_type VALUES ('Email ID');
+INSERT INTO t_master_uid_type VALUES ('PAN Number');
+INSERT INTO t_master_uid_type VALUES ('AADHAR Number'); 
+
+
 
 
 -- 28/07/2018

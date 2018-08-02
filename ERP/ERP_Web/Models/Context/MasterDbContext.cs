@@ -22,5 +22,7 @@ namespace ERP.Models.Context
         public DbSet<user> users { get; set; }
         public DbSet<group> groups { get; set; }
         public DbSet<master_menu> master_menu { get; set; }
+        public DbSet<Customer> customers { get; set; }
+        public DbSet<UidType> uidTypes { get; set; }
     }
 }

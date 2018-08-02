@@ -2,3 +2,7 @@
         color: #000000;
         text-decoration: none;
     }
+
+field-validation-error {
+    color: red;
+}

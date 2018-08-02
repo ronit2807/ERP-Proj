@@ -13,13 +13,17 @@ namespace ERP.Models.DataTemplates.MasterVM
     {
         public Int64 id { get; set; }
         [Display(Name="User Name")]
+        [Required(ErrorMessage = "Enter User Name")]
         public string userName { get; set; }
         [Display(Name = "Login Id")]
+        [Required(ErrorMessage = "Enter Login ID")]
         public string loginId { get; set; }
         [Display(Name = "Password")]
+        [Required(ErrorMessage = "Enter Password")]
         public string userPass { get; set; }
         public Int64 groupId { get; set; }
         [Display(Name = "Is Active")]
+        [Required(ErrorMessage = "Enter Status")]
         public bool isActive { get; set; }
         public IEnumerable<SelectListItem> Groups { get; set; }
 

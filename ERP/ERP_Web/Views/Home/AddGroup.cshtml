@@ -20,14 +20,10 @@
     <div class="col-md-6">
         <div class="editor-field">
             @Html.EditorFor(model => model.groupName)
-            @Html.ValidationMessageFor(model => model.groupName)
+            @Html.ValidationMessageFor(model => model.groupName, "", new { @class="text-danger"})
         </div>
     </div>
     
-    
-}
-
-
     <div class="col-md-6">
         &nbsp;
         <div>
@@ -38,4 +34,8 @@
         </div>
 
     </div>
+}
+
+
+    
 

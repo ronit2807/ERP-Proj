@@ -1,0 +1,162 @@
+﻿@model ERP_Web.Models.DataTemplates.MasterVM.CustomerVM
+
+@{
+    ViewBag.Title = "AddCustomer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<!DOCTYPE html>
+<html>
+<head>*@
+    <link href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <script type='text/javascript'>
+        $(function () {
+            $('.date-picker').datepicker({
+                changeMonth: true,
+                changeYear: true,
+                showButtonPanel: true,
+                dateFormat: 'dd-mm-yy',
+                yearRange: "-100:+0",
+                onClose: function (dateText, inst) {
+                    $(this).datepicker('setDate', new Date(inst.selectedYear, inst.selectedMonth, 1));
+                }
+            });
+            //{ dateFormat: 'dd-mm-yy' }
+            $('#btn').click(function () {
+                //var abc = $('#cust_uid').val() + $('#cust_name').val() + $('#cust_dob').val() + $('#remarks').val();
+                //alert(abc);
+                //var bcd = $('#ex1').val();
+                //alert(bcd);
+                var custVM = {};
+                custVM.cust_uid = $('#cust_uid').val();
+                var selTypeText = $("#cust_uid_type option:selected").val();
+                custVM.cust_uid_type = parseInt(selTypeText);
+                custVM.cust_name = $('#cust_name').val();
+                var dob = $('#cust_dob').val();
+                custVM.cust_dob = dob;
+                
+                custVM.remarks = $('#remarks').val();
+                custVM.firstField = $('#ex1').val();
+                custVM.secondField = $('#ex2').val();
+                custVM.thirdField = $('#ex3').val();
+                
+                if (custVM.cust_uid_type == 0|| custVM.cust_name=="") {
+                    $('#dropdown-error').text("*");
+                    
+                }
+
+                else {
+                    $.post("AddCustomer", custVM, function (result) {
+
+                        window.location.href = '/Home/Dashboard';
+                    });
+                }
+            });
+        })
+
+        
+
+       
+    </script>
+    @*<meta charset="utf-8">
+    <title>JS Bin</title>
+</head>
+<body>*@
+    <h2>AddCustomer</h2>
+
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true)
+
+        <div class="row">
+            <div class="col-md-1">
+                <label>UID Type</label>
+            </div>
+            <div class="col-md-3">
+                @Html.DropDownListFor(m => m.cust_uid_type, Model.uidTypes, "--Select Type--",new { @id="cust_uid_type"})
+            </div>
+            <div class="col-md-1">
+                @Html.LabelFor(model => model.cust_uid)
+            </div>
+            <div class="col-md-3">
+                @Html.EditorFor(model => model.cust_uid, new { @id="cust_uid"})
+                @Html.ValidationMessageFor(model => model.cust_uid)
+            </div>
+            <div class="col-md-1">
+                @Html.LabelFor(model => model.cust_name)
+            </div>
+            <div class="col-md-3">
+                @Html.EditorFor(model => model.cust_name,new { @id="cust_name"})
+                @Html.ValidationMessageFor(model => model.cust_name)
+            </div>
+
+
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-1">
+                <label>DOB</label>
+            </div>
+            <div class="col-md-3">
+                @*@Html.EditorFor(model => model.cust_dob)
+            @Html.ValidationMessageFor(model => model.cust_dob)*@
+
+                @Html.TextBoxFor(model => model.cust_dob,"{0:d}", new { @class = "date-picker" ,@id="cust_dob" })
+
+
+
+            </div>
+            <div class="col-md-1">
+                @Html.LabelFor(model => model.remarks)
+            </div>
+            <div class="col-md-3">
+                @Html.EditorFor(model => model.remarks,new { @id="cust_remark"})
+                @Html.ValidationMessageFor(model => model.remarks)
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-1">
+                <b>GSTIN</b>
+            </div>
+            <div class="col-md-7">
+                <div class="form-group row">
+                    <div class="col-xs-2">
+
+                        <input class="form-control" id="ex1" type="text">
+                    </div>
+                    <div class="col-xs-4">
+
+                        <input class="form-control" id="ex2" type="text">
+                    </div>
+                    <div class="col-xs-2">
+
+                        <input class="form-control" id="ex3" type="text">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br />
+        
+    }
+    
+      <div class="col-md-6">
+            <div>
+                <input class="btn btn-sm btn-primary" type="button" id="btn" value="Create" />
+                <div class="btn btn-sm btn-danger">
+                    @Html.ActionLink("Back to List", "UsersList")
+                </div>
+            </div>
+
+        </div>
+@*</body>*@
+@*<script type='text/javascript'>
+    $(function () {
+        
+        $('.date-picker').datepicker();
+        
+    })
+    </script>*@

@@ -11,7 +11,7 @@ namespace ERP_Web.Models.DataTemplates.MasterVM
         [Key]
         public Int64 id { get; set; }
         [Display(Name="Group Name")]
-        [Required]
+        [Required(ErrorMessage="Enter Group Name")]
         public string groupName { get; set; }
     }
 }

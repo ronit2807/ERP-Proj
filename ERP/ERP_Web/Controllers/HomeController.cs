@@ -156,6 +156,19 @@ namespace ERP.Controllers
             return View(groupList);
         }
 
+        public ActionResult DeleteUser(int id)
+        {
+            using (MasterDbContext db = new MasterDbContext())
+            {
+                user l_oUser = db.users.Find(id);
+                db.users.Remove(l_oUser);
+                db.SaveChanges();
+            }
+
+
+            return RedirectToAction("UsersList");
+        }
+
         private IEnumerable<SelectListItem> GetSelectListItems(IEnumerable<group> elements)
         {
             var selectList = new List<SelectListItem>();
